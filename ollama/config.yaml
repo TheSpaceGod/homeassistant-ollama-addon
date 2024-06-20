@@ -8,6 +8,7 @@ arch:
 url: https://ollama.com
 environment:
   OLLAMA_MODELS: "/config/ollama"
+  OLLAMA_KEEP_ALIVE: -1 #This keeps ollama models loaded in memory.
 map:
   - config:rw
 image: docker.io/ollama/ollama
